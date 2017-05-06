@@ -1,0 +1,84 @@
+.container{
+	display: flex;
+	height: 100vh;
+	width: 100vw;
+	background-color: #ddd;
+	padding: 0;
+	margin: 0;
+}
+.loginContainer{
+	margin: auto;
+}
+.loginForm{
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+	background-color: #aaa;
+}
+.loginForm input{
+	margin: 10px 0 ;
+}
+.orderSidebar{
+	background-color: pink;
+	width: 30vw;
+	max-width: 350px;
+	min-height: 100vh;
+	overflow-y: scroll;
+	padding-left: 0;
+}
+.orderListItem{
+	list-style: none;
+	background-color: whitesmoke;
+	padding: 20px;
+	text-align: center;
+
+}
+.orderListItem:first-child{
+	margin-top: 0;
+}
+.orderListItem:hover{
+	background-color: grey;
+	cursor: pointer;
+}
+.orderActive{
+	/* background-color: grey; */
+	position: relative;
+	/* border: 2px solid grey; */
+	z-index: 999;
+}
+.orderActive:after{
+	content: '';
+	height: 0;
+	width: 0;
+	position: absolute;
+	top: 8px;
+	right: 0;
+	border: 30px solid transparent;
+	border-right: 30px solid #ddd;
+}
+.orderContent{
+	display: flex;
+	width: 100%;
+}
+.orderContentHeader{
+	width: 100%;
+	height: 200px;
+	background-color: red;
+	display: flex;
+}
+.orderContentImage{
+	margin: auto;
+}
+.orderContentMain{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
+.orderContentWOD{
+	text-align: center;
+	margin: auto;
+}
+.orderContentWOD h1{
+	text-transform: uppercase;
+}
