@@ -22,9 +22,10 @@
 	background-color: pink;
 	width: 30vw;
 	max-width: 350px;
-	min-height: 100vh;
+	min-height: 100%;
 	overflow-y: scroll;
 	padding-left: 0;
+	margin: 0;
 }
 .orderListItem{
 	list-style: none;
@@ -59,11 +60,11 @@
 .orderContent{
 	display: flex;
 	width: 100%;
+	flex-direction: column;
 }
 .orderContentHeader{
 	width: 100%;
 	height: 200px;
-	background-color: red;
 	display: flex;
 }
 .orderContentImage{
@@ -81,4 +82,24 @@
 }
 .orderContentWOD h1{
 	text-transform: uppercase;
+}
+.orderContentDrinks{
+	margin: auto;
+	background-color: whitesmoke;
+	width: 80%;
+	height: 400px;
+	display: flex;
+}
+.orderContentDrinks .orderListItem{
+	text-align: left;
+	border-right: 2px solid grey;
+	
+}
+.orderContentDrinks .orderListItem h3{
+	display: inline;
+}
+.quantity{
+	border: 2px solid red;
+	border-radius: 50%;
+	padding: 1px 8px;
 }
