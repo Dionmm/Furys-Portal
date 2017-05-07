@@ -8,50 +8,59 @@
 	<link rel="stylesheet" type="text/css" href="/styles/main.css">
 </head>
 <body>
-<div class="container">
-	<ul class="orderSidebar">
-		<li class="orderListItem orderActive">
-			<h3>Order 30</h3>
-		</li>
-		<li class="orderListItem">
-			<h3>Order 31</h3>
-		</li>
-		<li class="orderListItem">
-			<h3>Order 32</h3>
-		</li>
-	</ul>
-	<div class="orderContent">
-		<div class="orderContentHeader">
-			<div class="orderContentImage">
-				<img src="https://www.placecage.com/150/150">
+<div class="container orderPage">
+	<div class="headerBar">
+		<button class="logout btn btn-primary">Logout</button>
+	</div>
+	<div class="content">
+		<ul class="orderSidebar">
+			<li class="orderListItem orderActive">
+				<h3>Order 30</h3>
+			</li>
+			<li class="orderListItem">
+				<h3>Order 31</h3>
+			</li>
+			<li class="orderListItem">
+				<h3>Order 32</h3>
+			</li>
+		</ul>
+		<div class="orderContent">
+			<div class="orderContentHeader">
+				<div class="orderContentImage">
+					<img src="https://www.placecage.com/150/150">
+				</div>
+				<div class="orderContentMain">
+					<h2>Order 30</h2>
+					<button class="btn btn-primary" id="orderComplete">Complete Order</button>
+				</div>
+				<div class="orderContentWOD">
+					<h2>Word of the Day</h2>
+					<h1>Entice</h1>
+				</div>
 			</div>
-			<div class="orderContentMain">
-				<h2>Order 30</h2>
-				<button class="btn btn-primary" id="orderComplete">Complete Order</button>
+			<div class="orderContentDrinks">
+				<ul class="orderSidebar">
+					<li class="orderListItem">
+						<h3 class="quantity">9</h3>
+						<h3>Vodka Coke</h3>
+					</li>
+					<li class="orderListItem">
+						<h3 class="quantity">2</h3>
+						<h3>Vodka Lemonade</h3>
+					</li>
+				</ul>
 			</div>
-			<div class="orderContentWOD">
-				<h2>Word of the Day</h2>
-				<h1>Entice</h1>
-			</div>
-		</div>
-		<div class="orderContentDrinks">
-			<ul class="orderSidebar">
-				<li class="orderListItem">
-					<h3 class="quantity">9</h3>
-					<h3>Vodka Coke</h3>
-				</li>
-				<li class="orderListItem">
-					<h3 class="quantity">2</h3>
-					<h3>Vodka Lemonade</h3>
-				</li>
-			</ul>
 		</div>
 	</div>
+	
 </div>
 
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="https://api.furysayr.co.uk/Scripts/jquery-1.6.4.js"></script>
+<script src="https://api.furysayr.co.uk/Scripts/jquery.signalR-2.2.1.min.js"></script>
+<script src="https://api.furysayr.co.uk/signalr/hubs"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
 <script src="scripts/main.js"></script>
 </body>
 </html>

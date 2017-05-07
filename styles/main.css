@@ -18,6 +18,19 @@
 .loginForm input{
 	margin: 10px 0 ;
 }
+.orderPage{
+	flex-direction: column;
+}
+.headerBar{
+	width: 100vw;
+	background-color: #33363f;
+	padding: 10px;
+	display: flex;
+}
+.content{
+	display: flex;
+	flex-direction: row;
+}
 .orderSidebar{
 	background-color: pink;
 	width: 30vw;
