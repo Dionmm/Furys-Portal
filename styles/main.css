@@ -30,9 +30,10 @@
 .content{
 	display: flex;
 	flex-direction: row;
+	height: 100%;
 }
 .orderSidebar{
-	background-color: pink;
+	background-color: #33363f;
 	width: 30vw;
 	max-width: 350px;
 	min-height: 100%;
@@ -74,6 +75,7 @@
 	display: flex;
 	width: 100%;
 	flex-direction: column;
+	visibility: hidden;
 }
 .orderContentHeader{
 	width: 100%;
